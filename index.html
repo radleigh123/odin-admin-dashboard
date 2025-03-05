@@ -3,12 +3,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Admin Dashboard</title>
-
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="normalize.css">
 </head>
 <body>
-    <h1>HEADING1</h1>
+    <header class="top-bar">
+        <div class="search-bar">
+            <div class="search-container">
+                <div class="search-icon">🔎</div>
+                <div class="search-input">
+                    <input type="text" placeholder="Search" aria-label="Search">
+                </div>
+            </div>
+            <div class="user-info">
+                <div class="notification-icon">🛎️</div>
+                <div class="avatar">👤</div>
+                <p class="username">LaRon Scott</p>
+            </div>
+        </div>
+        <div class="profile-bar">
+            <div class="welcome-message">
+                <p>Hi there</p>
+                <p class="user-handle">LaRon Scott (@LaRonScott)</p>
+            </div>
+            <div class="action-buttons">
+                <button type="button">New</button>
+                <button type="button">Upload</button>
+                <button type="button">Share</button>
+            </div>
+        </div>
+    </header>
+    
+    <nav class="main-navigation">
+        <div class="title">
+            <div class="logo">LOGO</div>
+            <div class="web-title">Dashboard</div>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><div class="icon">🏠</div><a href="#">Home</a></li>
+                <li><div class="icon">👤</div><a href="#">Profile</a></li>
+                <li><div class="icon">💬</div><a href="#">Messages</a></li>
+                <li><div class="icon">📓</div><a href="#">History</a></li>
+                <li><div class="icon">📚</div><a href="#">Tasks</a></li>
+                <li><div class="icon">👥</div><a href="#">Communities</a></li>
+            </ul>
+        </div>
+        <div class="settings">
+            <ul>
+                <li><div class="icon">⚙</div><a href="#">Settings</a></li>
+                <li><div class="icon">🆘</div><a href="#">Support</a></li>
+                <li><div class="icon">👤</div><a href="#">Privacy</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <main class="main-content">
+        <section class="projects-section">
+            <h2>Your projects</h2>
+            <div class="projects">
+                <article class="project">
+                    <h3 class="project-title">Super Cool Project</h3>
+                    <p class="project-description">Sed tempus lectus nunc, imperdiet sodales nisi semper.</p>
+                    <div class="project-actions">
+                        <button aria-label="Like" class="action-icon">👍</button>
+                        <button aria-label="Comment" class="action-icon">💬</button>
+                        <button aria-label="Share" class="action-icon">🔗</button> 
+                    </div>
+                </article>
+                <article class="project">
+                    <h3 class="project-title">Less Cool Project</h3>
+                    <p class="project-description">Sed tempus lectus nunc, imperdiet sodales nisi semper.</p>
+                    <div class="project-actions">
+                        <button aria-label="Like" class="action-icon">👍</button>
+                        <button aria-label="Comment" class="action-icon">💬</button>
+                        <button aria-label="Share" class="action-icon">🔗</button> 
+                    </div>
+                </article>
+                <article class="project">
+                    <h3 class="project-title">Not So Cool Project</h3>
+                    <p class="project-description">Sed tempus lectus nunc, imperdiet sodales nisi semper.</p>
+                    <div class="project-actions">
+                        <button aria-label="Like" class="action-icon">👍</button>
+                        <button aria-label="Comment" class="action-icon">💬</button>
+                        <button aria-label="Share" class="action-icon">🔗</button> 
+                    </div>
+                </article>
+                <article class="project">
+                    <h3 class="project-title">Another Not So Cool Project</h3>
+                    <p class="project-description">Sed tempus lectus nunc, imperdiet sodales nisi semper.</p>
+                    <div class="project-actions">
+                        <button aria-label="Like" class="action-icon">👍</button>
+                        <button aria-label="Comment" class="action-icon">💬</button>
+                        <button aria-label="Share" class="action-icon">🔗</button> 
+                    </div>
+                </article>
+                <article class="project">
+                    <h3 class="project-title">Most Not So Cool Project</h3>
+                    <p class="project-description">Sed tempus lectus nunc, imperdiet sodales nisi semper.</p>
+                    <div class="project-actions">
+                        <button aria-label="Like" class="action-icon">👍</button>
+                        <button aria-label="Comment" class="action-icon">💬</button>
+                        <button aria-label="Share" class="action-icon">🔗</button> 
+                    </div>
+                </article>
+                <article class="project">
+                    <h3 class="project-title">The Best Project</h3>            
+                    <p class="project-description">Sed tempus lectus nunc, imperdiet sodales nisi semper.</p>
+                    <div class="project-actions">
+                        <button aria-label="Like" class="action-icon">👍</button>
+                        <button aria-label="Comment" class="action-icon">💬</button>
+                        <button aria-label="Share" class="action-icon">🔗</button> 
+                    </div>
+                </article>
+            </div>
+        </section>
+        
+        <aside class="sidebar">
+            <section class="announcements-section">
+                <h2>Announcements</h2>
+                <div class="announcements">
+                    <article class="announcement">
+                        <h3 class="announcement-title">Site Maintenance</h3>
+                        <p class="announcement-description">Sed tempus lectus nunc, imperdiet sodales nisi semper.</p>
+                    </article>
+                    <article class="announcement">
+                        <h3 class="announcement-title">Community Share Day</h3>
+                        <p class="announcement-description">Sed tempus lectus nunc, imperdiet sodales nisi semper.</p>
+                    </article>
+                    <article class="announcement">
+                        <h3 class="announcement-title">Updated Privacy Policy</h3>
+                        <p class="announcement-description">Sed tempus lectus nunc, imperdiet sodales nisi semper.</p>
+                    </article>
+                </div>
+            </section>
+            
+            <section class="trending-section">
+                <h2>Trending</h2>
+                <div class="trending">
+                    <article class="trend">
+                        <h3 class="trend-title">#1</h3>
+                        <p class="trend-description">Sed tempus lectus nunc, imperdiet sodales nisi semper.</p>
+                    </article>
+                    <article class="trend">
+                        <h3 class="trend-title">#2</h3>
+                        <p class="trend-description">Sed tempus lectus nunc, imperdiet sodales nisi semper.</p>
+                    </article>
+                    <article class="trend">
+                        <h3 class="trend-title">#3</h3>
+                        <p class="trend-description">Sed tempus lectus nunc, imperdiet sodales nisi semper.</p>
+                    </article>
+                </div>
+            </section>
+        </aside>
+    </main>
 </body>
 </html>
